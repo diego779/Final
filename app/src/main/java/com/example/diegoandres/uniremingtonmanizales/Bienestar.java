@@ -5,15 +5,15 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Moodle extends AppCompatActivity {
+public class Bienestar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_moodle);
+        setContentView(R.layout.activity_bienestar);
 
-        WebView view = (WebView) findViewById(R.id.moodle);
+        WebView view = (WebView) findViewById(R.id.bienestar);
         view.setWebViewClient(new WebViewClient());
-        view.loadUrl("http://virtual.uniremingtonmanizales.edu.co/moodle/login/index.php");
+        view.loadUrl("http://www.uniremington.edu.co/manizales/1459-convenios-bienestar.html");
     }
 }

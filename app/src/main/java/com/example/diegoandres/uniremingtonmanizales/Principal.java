@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class Principal extends AppCompatActivity {
 
     ImageView btnsalir;
-    Button Sedes, Ubicacion, Comunidad, Programas, Admisiones, Uniremington;
+    Button Sedes, Ubicacion, Comunidad, Programas, Admisiones, Uniremington, Plataformas, Bienestar;
 
 
 
@@ -18,6 +18,27 @@ public class Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        Bienestar = (Button)findViewById(R.id.btnbienestaryegresados);
+        Bienestar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intbienestar = new Intent(Principal.this, Bienestar.class);
+                startActivity(intbienestar);
+            }
+        });
+
+
+        Plataformas = (Button)findViewById(R.id.btnplataformas);
+        Plataformas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intplataformas = new Intent(Principal.this, Plataformas.class);
+                startActivity(intplataformas);
+            }
+        });
+
+
 
         Uniremington = (Button)findViewById(R.id.btnuniremington);
         Uniremington.setOnClickListener(new View.OnClickListener() {

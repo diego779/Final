@@ -58,7 +58,8 @@
         <activity android:name=".Plataformas" />
         <activity android:name=".Q10" />
         <activity android:name=".Correo" />
-        <activity android:name=".Moodle"></activity>
+        <activity android:name=".Moodle" />
+        <activity android:name=".Bienestar"></activity>
     </application>
 
 </manifest>
