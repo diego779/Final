@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class Principal extends AppCompatActivity {
 
     ImageView btnsalir;
-    Button Sedes, Ubicacion, Comunidad, Programas, Admisiones, Uniremington, Plataformas, Bienestar;
+    Button Sedes, Ubicacion, Comunidad, Programas, Admisiones, Uniremington, Bienestar, Correo, Moodle, Q10;
 
 
 
@@ -18,6 +18,33 @@ public class Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        Correo = (Button)findViewById(R.id.btncorreo);
+        Correo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intcorreo = new Intent(Principal.this, Correo.class);
+                startActivity(intcorreo);
+            }
+        });
+
+        Moodle = (Button)findViewById(R.id.btnmoodle);
+        Moodle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intmoodle = new Intent(Principal.this, Moodle.class);
+                startActivity(intmoodle);
+            }
+        });
+
+        Q10 = (Button)findViewById(R.id.btnq10);
+        Q10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intq10 = new Intent(Principal.this, Q10.class);
+                startActivity(intq10);
+            }
+        });
 
         Bienestar = (Button)findViewById(R.id.btnbienestaryegresados);
         Bienestar.setOnClickListener(new View.OnClickListener() {
@@ -27,18 +54,6 @@ public class Principal extends AppCompatActivity {
                 startActivity(intbienestar);
             }
         });
-
-
-        Plataformas = (Button)findViewById(R.id.btnplataformas);
-        Plataformas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intplataformas = new Intent(Principal.this, Plataformas.class);
-                startActivity(intplataformas);
-            }
-        });
-
-
 
         Uniremington = (Button)findViewById(R.id.btnuniremington);
         Uniremington.setOnClickListener(new View.OnClickListener() {
