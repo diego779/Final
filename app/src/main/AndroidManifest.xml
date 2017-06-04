@@ -54,7 +54,11 @@
         <activity android:name=".Comunidad" />
         <activity android:name=".Programas" />
         <activity android:name=".Admisiones" />
-        <activity android:name=".Uniremington"></activity>
+        <activity android:name=".Uniremington" />
+        <activity android:name=".Plataformas" />
+        <activity android:name=".Q10" />
+        <activity android:name=".Correo" />
+        <activity android:name=".Moodle"></activity>
     </application>
 
 </manifest>
